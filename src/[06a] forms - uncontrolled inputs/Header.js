@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => (
   <div>
-    <h1>Example 7a: forms with UNCONTROLLED inputs</h1>
+    <h1>Example 6a: forms with UNCONTROLLED inputs</h1>
   </div>
 );
 
