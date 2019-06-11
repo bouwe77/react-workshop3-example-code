@@ -1,14 +1,19 @@
 import React from "react";
 
 // Child components:
-import Welcome from "./Welcome";
+import Hello from "./Hello";
 
 function App() {
   return (
     <div>
-      <Welcome />
+      <Title />
+      <Hello />
     </div>
   );
+}
+
+function Title() {
+  return <h1>Example 2: multiple components</h1>;
 }
 
 export default App;

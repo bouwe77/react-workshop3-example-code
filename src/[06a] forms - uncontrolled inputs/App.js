@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Header from "./Header";
+import Title from "./Title";
 import Form from "./Form";
 import ToDoList from "./ToDoList";
 import TreeStructure from "./TreeStructure";
@@ -14,10 +14,9 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <Title />
       <Form addToDo={addToDo} />
       <ToDoList todos={todos} />
-      <TreeStructure />
     </div>
   );
 }

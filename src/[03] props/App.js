@@ -1,15 +1,20 @@
 import React from "react";
 
-import Welcome from "./Welcome";
+import Hello from "./Hello";
 
 function App() {
-  const name = "New Nexus";
+  const name = "everyone";
 
   return (
     <div>
-      <Welcome name={name} />
+      <Title />
+      <Hello name={name} />
     </div>
   );
+}
+
+function Title() {
+  return <h1>Example 3: props</h1>;
 }
 
 export default App;

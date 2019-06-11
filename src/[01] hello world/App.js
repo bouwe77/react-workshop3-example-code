@@ -8,6 +8,7 @@ function App() {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
+// End of example...
 
 // Note that the export below is only here to make my Examples App work...
 export default App;

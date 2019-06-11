@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import Header from "./Header";
+import Title from "./Title";
 import Form from "./Form";
 import ToDoList from "./ToDoList";
 import TreeStructure from "./TreeStructure";
@@ -73,10 +73,9 @@ function App() {
   } else {
     return (
       <div>
-        <Header />
+        <Title />
         <Form addToDo={addToDo} />
         <ToDoList todos={todos} />
-        <TreeStructure />
       </div>
     );
   }

@@ -1,9 +1,9 @@
 import React from "react";
 
-const Header = () => (
+const Title = () => (
   <div>
     <h1>Example 6a: forms with UNCONTROLLED inputs</h1>
   </div>
 );
 
-export default Header;
+export default Title;
