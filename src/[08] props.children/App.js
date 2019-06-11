@@ -1,37 +1,20 @@
 import React from "react";
 
 const App = () => {
-  var picture = {
-    src: "https://source.unsplash.com/random/640x480",
-    title: "Random photo"
-  };
-
   return (
-    <div>
-      <Picture src={picture.src}>
-        <div>{picture.title}</div>
-      </Picture>
-      <Picture src={picture.src}>
-        <div>
-          <a href="https://newnexus.nl">{picture.title}</a>
-        </div>
-      </Picture>
-      <Picture src={picture.src}>
-        <Caption caption={picture.title} />
-      </Picture>
-    </div>
+    <>
+      <h1>Example 8: props.children</h1>
+      <Panel>
+        <h1>Title</h1>
+        <p> content...</p>
+      </Panel>
+    </>
   );
 };
 
-const Picture = props => {
-  return (
-    <div>
-      <img src={props.src} alt="aeroplane" width="200" />
-      {props.children}
-    </div>
-  );
-};
-
-const Caption = ({ caption }) => <div>{caption}</div>;
+const Panel = props => <div className="panel">{props.children}</div>;
 
 export default App;
+
+// Photo:
+// <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/vestrahorn-iceland-francesco-riccardo-iacomino.jpg" width="300" height="200" alt=""/>
