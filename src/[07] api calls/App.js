@@ -4,9 +4,8 @@ import axios from "axios";
 import Title from "./Title";
 import Form from "./Form";
 import ToDoList from "./ToDoList";
-import TreeStructure from "./TreeStructure";
 
-function App() {
+export default function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [todos, setTodos] = useState([]);
   const [error, setError] = useState();
@@ -80,5 +79,3 @@ function App() {
     );
   }
 }
-
-export default App;

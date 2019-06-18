@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import Title from "./Title";
 import Form from "./Form";
 import ToDoList from "./ToDoList";
-import TreeStructure from "./TreeStructure";
 
-function App() {
+export default function App() {
   const [todos, setTodos] = useState([]);
 
   function addToDo(description) {
@@ -20,5 +19,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

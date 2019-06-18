@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import Title from "./Title";
 import Photo from "./Photo";
 import Buttons from "./Buttons";
 import getRandomPhoto from "./getRandomPhoto";
 
-function App() {
+export default function App() {
   const [photos, setPhotos] = useState([]);
   const [selectedId, setSelectedId] = useState(0);
 
@@ -32,7 +33,7 @@ function App() {
   }
 
   function removePhoto() {
-    // Rmove a photo from the state.
+    // Remove a photo from the state.
     const updatedPhotos = photos.filter(photo => photo.id !== selectedId);
     setPhotos(updatedPhotos);
   }
@@ -44,8 +45,7 @@ function App() {
 
   return (
     <div>
-      <h1>Example 5: useState for array of objects</h1>
-
+      <Title />
       <Buttons
         addPhoto={addPhoto}
         updatePhoto={updatePhoto}
@@ -65,5 +65,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
-function Form(props) {
+// ==========================================
+// This is a "remaining chars" example
+// to show how to customize controlled forms
+// ==========================================
+
+export default function Form(props) {
   const maxLength = 5;
   const [description, setDescription] = useState("");
   const [remainingChars, setRemainingChars] = useState(maxLength);
@@ -42,5 +47,3 @@ function Form(props) {
     </form>
   );
 }
-
-export default Form;

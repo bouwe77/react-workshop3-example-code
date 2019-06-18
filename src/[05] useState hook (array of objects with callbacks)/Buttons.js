@@ -1,27 +1,25 @@
 import React from "react";
 
-export default class Buttons extends React.Component {
-  handleUpdateClick = () => {
-    this.props.updatePhoto();
+export default function Buttons(props) {
+  const handleUpdateClick = () => {
+    props.updatePhoto();
   };
 
-  handleDeleteClick = () => {
-    this.props.removePhoto();
+  const handleDeleteClick = () => {
+    props.removePhoto();
   };
 
-  handleAddClick = () => {
-    this.props.addPhoto();
+  const handleAddClick = () => {
+    props.addPhoto();
   };
 
-  render() {
-    return (
-      <div className="buttons">
-        <button onClick={this.handleAddClick}>+</button>
-        &nbsp;
-        <button onClick={this.handleUpdateClick}>&#x21bb;</button>
-        &nbsp;
-        <button onClick={this.handleDeleteClick}>-</button>
-      </div>
-    );
-  }
+  return (
+    <div className="buttons">
+      <button onClick={handleAddClick}>+</button>
+      &nbsp;
+      <button onClick={handleUpdateClick}>&#x21bb;</button>
+      &nbsp;
+      <button onClick={handleDeleteClick}>-</button>
+    </div>
+  );
 }

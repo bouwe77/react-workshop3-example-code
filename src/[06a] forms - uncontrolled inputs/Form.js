@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Form(props) {
+export default function Form(props) {
   let descriptionInputField = React.createRef();
 
   function submitForm(event) {
@@ -25,5 +25,3 @@ function Form(props) {
     </form>
   );
 }
-
-export default Form;
