@@ -17,26 +17,31 @@ export default function App() {
   // Second, you pass in on which variables this useEffect depends on.
   // These variables, can be one or more of the following:
   // props, state, setters etc.
-  useEffect(getToDos, [setTodos]);
+  // If the effect does not depend on anything or you want to run the
+  // effect once pass an empty array as second argument
+  useEffect(() => {
+    // getToDos fetches ToDos from the API and updates the state.
+    // It is good practice to place functions inside the effect if they are only used by that effect.
+    function getToDos() {
+      // Axios is one of the many libraries you can use to do HTTP calls with.
+      axios
+        .get(url)
+        .then(res => {
+          // The GET request was successful so update the state with the received ToDos.
+          setIsLoaded(true);
+          setTodos(res.data);
+        })
+        .catch(error => {
+          // In case of an error while calling the API,
+          // the error is added to the state so it can be displayed.
+          setIsLoaded(true);
+          setError(error);
+        });
+    }
 
-  // getToDo fetches ToDos from the API and updates the state.
-  function getToDos() {
-    // Axios is one of the many libraries you can use to do HTTP calls with.
-    axios
-      .get(url)
-      .then(res => {
-        // The GET request was successful so update the state with the received ToDos.
-        const todos = res.data;
-        setIsLoaded(true);
-        setTodos(todos);
-      })
-      .catch(error => {
-        // In case of an error while calling the API,
-        // the error is added to the state so it can be displayed.
-        setIsLoaded(true);
-        setError(error);
-      });
-  }
+    // Call the getToDos function we just declared above.
+    getToDos();
+  }, []); // this empty array means: run the effect only once.
 
   // addToDo is a callback function called by the Form component.
   // It sends the ToDo to the API and updates the state.
