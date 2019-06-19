@@ -14,7 +14,7 @@ export default function App() {
 
   // The useEffect hook runs after each render.
   // First, you pass in the function that must be called after a render.
-  // Second, you pass in on which variables this useEffect depends on.
+  // Second, you pass in on which variables (values) this useEffect depends on.
   // These variables, can be one or more of the following:
   // props, state, setters etc.
   // If the effect does not depend on anything or you want to run the
