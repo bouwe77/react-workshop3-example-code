@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Title from "./Title";
+import Title from "../Title";
 import Photo from "./Photo";
 import Buttons from "./Buttons";
 import getRandomPhoto from "./getRandomPhoto";
@@ -45,7 +45,10 @@ export default function App() {
 
   return (
     <div>
-      <Title />
+      <Title
+        title="Example 5: useState for array of objects"
+        subtitle="My Random Photo App"
+      />
       <Buttons
         addPhoto={addPhoto}
         updatePhoto={updatePhoto}

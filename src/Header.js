@@ -11,7 +11,7 @@ function Header(props) {
 
   return (
     <div className="header">
-      <span>Examples React.js workshop</span>
+      <span>React.js workshop</span>
       <button
         className="example-nav"
         disabled={!props.hasPrev}

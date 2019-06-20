@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Title from "./Title";
+import Title from "../Title";
 import Form from "./Form";
 import ToDoList from "./ToDoList";
 
@@ -13,7 +13,10 @@ export default function App() {
 
   return (
     <div>
-      <Title />
+      <Title
+        title="Example 6b: forms with CONTROLLED inputs"
+        subtitle="My TO DO App"
+      />
       <Form addToDo={addToDo} />
       <ToDoList todos={todos} />
     </div>

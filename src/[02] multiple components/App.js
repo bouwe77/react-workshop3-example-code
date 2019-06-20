@@ -13,7 +13,12 @@ function App() {
 }
 
 function Title() {
-  return <h1>Example 2: multiple components</h1>;
+  return (
+    <>
+      <h1>Example 2: multiple components</h1>
+      <h3>My Hello App</h3>
+    </>
+  );
 }
 
 export default App;

@@ -1,18 +1,15 @@
 import React from "react";
 
 import Hello from "./Hello";
+import Title from "../Title";
 
 function App() {
   return (
     <div>
-      <Title />
+      <Title title="Example 3: props" subtitle="My Hello App" />
       <Hello name="World" />
     </div>
   );
-}
-
-function Title() {
-  return <h1>Example 3: props</h1>;
 }
 
 export default App;

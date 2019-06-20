@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import Title from "./Title";
+import Title from "../Title";
 import Form from "./Form";
 import ToDoList from "./ToDoList";
 
@@ -77,7 +77,7 @@ export default function App() {
   } else {
     return (
       <div>
-        <Title />
+        <Title title="Example 7: REST API calls" subtitle="My TO DO App" />
         <Form addToDo={addToDo} />
         <ToDoList todos={todos} />
       </div>

@@ -1,13 +1,14 @@
 import React from "react";
+import Title from "../Title";
 
 function App() {
   const counter = 42;
 
   return (
-    <div>
-      <h1>Example 4: useState hook</h1>
+    <>
+      <Title title="Example 4: useState hook" subtitle="My Counter App" />
       <h3>{counter}</h3>
-    </div>
+    </>
   );
 }
 
