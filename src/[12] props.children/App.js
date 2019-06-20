@@ -3,7 +3,7 @@ import React from "react";
 const App = () => {
   return (
     <>
-      <h1>Example 8: props.children</h1>
+      <h1>Example 12: props.children</h1>
       <Panel>
         <h1>Title</h1>
         <p> content...</p>

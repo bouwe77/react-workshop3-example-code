@@ -8,11 +8,11 @@ import Example5 from "./[05] useState hook (array of objects with callbacks)/App
 import Example6a from "./[06a] forms - uncontrolled inputs/App";
 import Example6b from "./[06b] forms - controlled inputs/App";
 import Example7 from "./[07] api calls/App";
-import Example8 from "./[08] props.children/App";
+import Example8 from "./[08] useEffect/App";
 import Example9 from "./[09] jsx avoid surrounding parent element/App";
 import Example10 from "./[10] import-export/App";
 import Example11 from "./[11] class components/App";
-import Example12 from "./[12] useEffect/App";
+import Example12 from "./[12] props.children/App";
 import Example88 from "./[88] empty example/App";
 import Example99 from "./[99] empty example/App";
 
