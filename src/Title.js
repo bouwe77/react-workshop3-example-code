@@ -3,9 +3,7 @@ import React from "react";
 function Title({ title, subtitle }) {
   return (
     <>
-      <div className="header">
-        <span className="title">&raquo; {title}</span>
-      </div>
+      <span className="title">&raquo; {title}</span>
       <h3>{subtitle}</h3>
     </>
   );

@@ -19,9 +19,7 @@ export default function Form(props) {
 
   return (
     <form onSubmit={submitForm}>
-      <input type="text" ref={descField} />
-      <br />
-      <button type="submit">OK</button>
+      <input type="text" ref={descField} /> <button type="submit">Add</button>
     </form>
   );
 }

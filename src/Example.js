@@ -38,7 +38,7 @@ const Example = props => {
   const index = props.currentExampleId - 1;
   const SelectedExample = examples[index];
   return (
-    <div>
+    <div className="example">
       <SelectedExample />
     </div>
   );

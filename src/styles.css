@@ -22,13 +22,25 @@ body {
 
 .title {
   font-size: 8pt;
+  color: gray;
+}
+
+.example {
+  padding: 10px;
 }
 
 button {
   font-size: 12pt;
-  width: 40px;
+  width: 45px;
   height: 30px;
   color: Black;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"] {
+  font-size: 12pt;
+  height: 24px;
 }
 
 .stack-horizontally {

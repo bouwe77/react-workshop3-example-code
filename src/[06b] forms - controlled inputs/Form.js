@@ -27,9 +27,8 @@ export default function Form(props) {
         value={description}
         // Events are used to update state
         onChange={onChangeDescription}
-      />
-      <br />
-      <button type="submit">OK</button>
+      />{" "}
+      <button type="submit">Add</button>
     </form>
   );
 }

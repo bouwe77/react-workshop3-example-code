@@ -14,7 +14,7 @@ export default function Buttons(props) {
   };
 
   return (
-    <div className="buttons">
+    <div>
       <button onClick={handleAddClick}>+</button>
       &nbsp;
       <button onClick={handleUpdateClick}>&#x21bb;</button>
