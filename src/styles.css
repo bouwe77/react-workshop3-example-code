@@ -18,6 +18,7 @@ body {
 
 .example-nav {
   margin-right: 10px;
+  width: 45px;
 }
 
 .title {
@@ -31,11 +32,8 @@ body {
 
 button {
   font-size: 12pt;
-  width: 45px;
   height: 30px;
   color: Black;
-  margin: 0;
-  padding: 0;
 }
 
 input[type="text"] {
