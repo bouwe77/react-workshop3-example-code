@@ -12,19 +12,21 @@ function App() {
     document.title = `Rendered ${renderCount} times`;
   });
 
+  //TODO uitlezen renderCount uit localStorage
+
   useEffect(() => {
     console.log("renderCount in useEffect", renderCount);
-    //TODO save to local storage
+    localStorage.setItem("renderCount", renderCount);
+    console.log(
+      "renderCount in localStorage",
+      localStorage.getItem("renderCount")
+    );
   }, [renderCount]);
 
   function rerenderClick() {
     console.log("renderCount before set", renderCount);
     setRenderCount(renderCount + 1);
     console.log("renderCount after set", renderCount);
-
-    // After the renderCount has been incremented we want to save it to local storage.
-    // However, we need the new value after the state has changed. That is a side effect,
-    // which means we have to create a useEffect hook for that.
   }
 
   console.log("Rendering...");
