@@ -13,8 +13,8 @@ export default function Form(props) {
     // Call the addToDo callback function from props and supply the entered description.
     props.addToDo(description);
 
-    // Clear the description so the textbox is cleared.
-    descField.current.clear();
+    // Clear the textbox.
+    descField.current.value = "";
   }
 
   return (
