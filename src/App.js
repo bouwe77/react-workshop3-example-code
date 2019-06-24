@@ -47,7 +47,7 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <Header
         nextExample={nextExample}
         prevExample={prevExample}
@@ -55,7 +55,7 @@ function App() {
         hasPrev={hasPrev(currentExampleId)}
       />
       <Example currentExampleId={currentExampleId} />
-    </div>
+    </>
   );
 }
 
