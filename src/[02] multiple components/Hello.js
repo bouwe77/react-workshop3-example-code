@@ -1,7 +1,7 @@
 import React from "react";
 
-function Welcome() {
+function Hello() {
   return <p>Hello World!</p>;
 }
 
-export default Welcome;
+export default Hello;
